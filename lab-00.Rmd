@@ -17,15 +17,15 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("Jamie Burrell", "Charlie Franklin-White", "Dru Keiri", "Sean Wang", 
+           "Annie Loi", "Duncan Hoyland"),
+  github_username = c("jamie-burrell", "cfranklinwhite", "squarehedge34", 
+                      "sw-005", "aaaannniie", "duncan-hoyland"), 
+  colour = c("blue", "blue", "purple", 
+             "green", "blue", "seagreen"),
+  hobby = c("climbing", "poker", "basketball", 
+            "gaming", "gaming", "rugby"),
+  favourite_number = c(2, 2, 6, 8, 7, 2)
   )
 
 team_data
@@ -46,20 +46,20 @@ p1 <- ggplot(data = team_data,
 p1
 ```
 
+The bar graph shows the favourite number (on the y-axis) and favourite colour (the bar itself) of each team member according to their GitHub username (on the x-axis).
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "GitHub username", 
+          y = "Favourite number",
+          title = "Favourite colours and numbers of GitHub users at Table 5")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+The labs() command allows us to add a title and axis labels to our plot.
 
 ### Exercise 20
 
@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+There are so many different hobbies with few individuals doing each meaning that the data is not very informative or easy to interpret and draw conclusions from. To improve the visualisation, hobbies could be grouped into categories, and members could be required to pick from a pre-existing list of categories.
