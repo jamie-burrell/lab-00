@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-There are so many different hobbies with few individuals doing each meaning that the data is not very informative or easy to interpret and draw conclusions from. To improve the visualisation, hobbies could be grouped into categories, and members could be required to pick from a pre-existing list of categories.
+There are so many different hobbies with few individuals doing each meaning that the data is not very informative or easy to interpret and draw conclusions from. To improve the visualisation, hobbies could be grouped into categories, and members could be required to pick from a pre-existing list of categories. In terms of visualisation it could also be plotted as a pie chart to more easily interpret.
