@@ -70,3 +70,9 @@ p2
 ```
 
 There are so many different hobbies with few individuals doing each meaning that the data is not very informative or easy to interpret and draw conclusions from. To improve the visualisation, hobbies could be grouped into categories, and members could be required to pick from a pre-existing list of categories. In terms of visualisation it could also be plotted as a pie chart to more easily interpret.
+
+``` {r new-pie-plot}
+p3 <- ggplot(team_data, aes(x="", y=1, fill=hobby)) +
+  geom_bar(stat="identity", width=1) +
+  coord_polar("y", start=0)
+p3
